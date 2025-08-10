@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Bank Account Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <div class="particles" id="particles-js"></div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-6">
+                <form id="signupForm" class="my-5">
+                    <div class="gold-bar"></div>
+
+                    <h2 class="form-title">Account Registration</h2>
+
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="firstName" class="form-label required-field">First Name</label>
+                            <div class="input-icon">
+                                <i class="fas fa-user"></i>
+                                <input type="text" class="form-control" id="firstName" placeholder="Enter first name"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="lastName" class="form-label required-field">Last Name</label>
+                            <div class="input-icon">
+                                <i class="fas fa-users"></i>
+                                <input type="text" class="form-control" id="lastName" placeholder="Enter last name"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="gender" class="form-label required-field">Gender</label>
+                            <select class="form-select" id="gender" required>
+                                <option value="MALE" selected>Male</option>
+                                <option value="FEMALE">Female</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="address" class="form-label required-field">Full Address</label>
+                            <div class="input-icon">
+                                <i class="fas fa-home"></i>
+                                <input type="text" class="form-control" id="address" placeholder="Enter full address"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="email" class="form-label required-field">Email Address</label>
+                            <div class="input-icon">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" class="form-control" id="email" placeholder="example@domain.com"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="phoneNumber" class="form-label required-field">Primary Phone</label>
+                            <div class="input-icon">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" class="form-control" id="phoneNumber" placeholder="07XXXXXXXX"
+                                    required>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="pass" class="form-label required-field">Password</label>
+
+                            <div class="input-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                                <input type="password" class="form-control" id="pass" placeholder="enter password"
+                                    required>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-12 mt-4">
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="fas fa-user-plus me-2"></i> Create Account
+                            </button>
+                        </div>
+
+                        <div class="col-12">
+                            <p class="form-footer">
+                                Already have an account? <a href="#">Login here</a>
+                            </p>
+                        </div>
+
+                        <div class="gold-bar"></div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const particlesContainer = document.getElementById('particles-js');
+            const particleCount = 30;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+
+                // Random size between 5px and 15px
+                const size = Math.random() * 10 + 5;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+
+                // Random animation duration
+                const duration = Math.random() * 10 + 10;
+                particle.style.animationDuration = `${duration}s`;
+
+                // Random delay
+                particle.style.animationDelay = `${Math.random() * 5}s`;
+
+                particlesContainer.appendChild(particle);
+            }
+        });
+    </script>
+
+    <script src="Login.js"></script>
+</body>
+
+</html>
