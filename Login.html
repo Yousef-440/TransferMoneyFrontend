@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+</head>
+
+<body>
+    <ul class="bubbles">
+        <li style="left: 25%; width: 80px; height: 80px; animation-delay: 0s; animation-duration: 20s;"></li>
+        <li style="left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s;"></li>
+        <li style="left: 70%; width: 20px; height: 20px; animation-delay: 4s; animation-duration: 18s;"></li>
+        <li style="left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 15s;"></li>
+        <li style="left: 65%; width: 20px; height: 20px; animation-delay: 0s; animation-duration: 25s;"></li>
+        <li style="left: 55%; width: 30px; height: 25px; animation-delay: 3s; animation-duration: 21s;"></li>
+    </ul>
+
+    <div class="login-container">
+        <h1>Welcome Back</h1>
+        <form id="LoginForm">
+            <div class="input-group">
+                <input type="email" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
+
+
+            <p class="login-link">
+                Create a new account => <a href="index.html">SignUp</a>
+            </p>
+
+            <button type="submit" class="login-btn">
+                <span>Sign In</span>
+            </button>
+        </form>
+    </div>
+
+    <script type="module" src="./LoginJs.Js"></script>
+</body>
+
+</html>
