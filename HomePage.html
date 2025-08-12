@@ -23,26 +23,36 @@
         </div>
     </nav>
 
-    <div class="balance-card">
-        <div>
-            <p class="balance__date">
-                <span id="hrs">00</span>
-                <span>:</span>
-                <span id="min">00</span>
-                <span id="sec">00</span>
-            </p>
-        </div>
+    <div class="dashboard-container">
+        <div class="balance-card">
+            <div>
+                <p class="balance__date">
+                    <span id="hrs">00</span>
+                    <span>:</span>
+                    <span id="min">00</span>
+                    <span id="sec">00</span>
+                </p>
+            </div>
 
-        <div class="balance-boxes">
-            <div class="balance-box">
-                <span class="box-label">Current Balance</span>
-                <span class="box-value">4,850<span>€</span></span>
+            <div class="balance-boxes">
+                <div class="balance-box">
+                    <span class="box-label">Current Balance</span>
+                    <span class="box-value"><span id="balance">4,850</span><span>€</span></span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-    <script src="HomeJs.js"></script>
+        <div class="actions-container">
+            <div class="actions-box">
+                <button class="action-btn deposit-btn" onclick="window.location.href='Deposit.html'">Deposit</button>
+
+                <button class="action-btn withdraw-btn">Withdraw</button>
+                <button class="action-btn transfer-btn">Transfer Money</button>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+        <script src="HomeJs.js"></script>
 </body>
 
 </html>

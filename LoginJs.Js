@@ -43,6 +43,7 @@ loginForm.addEventListener("submit", (event) => {
             window.localStorage.setItem("JWT-Token", data.data.token);
             window.localStorage.setItem('name', data.data.firstName);
             window.localStorage.setItem('balance', data.data.balance);
+            window.localStorage.setItem('accountNumber', data.data.accountNumber)
 
             setTimeout(() => {
                 window.location.replace("HomePage.html");

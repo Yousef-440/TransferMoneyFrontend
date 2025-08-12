@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deposit Funds</title>
+    <link rel="stylesheet" href="Deposit.css" />
+</head>
+
+<body>
+    <div class="deposit-container">
+        <form class="elegant-card" id="deposit-form">
+            <div class="card-header">
+                <div class="card-icon">
+                    <svg viewBox="0 0 24 24">
+                        <path fill="#fff"
+                            d="M5,6H19V16H5M19,18A2,2 0 0,0 21,16V6A2,2 0 0,0 19,4H5A2,2 0 0,0 3,6V16A2,2 0 0,0 5,18H1V20H23V18H19Z" />
+                    </svg>
+                </div>
+                <h2 class="card-title">Deposit Funds</h2>
+            </div>
+
+            <div class="input-group">
+                <div class="input-field">
+                    <svg class="prefix-icon" viewBox="0 0 24 24">
+                        <path fill="#667eea"
+                            d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+                    </svg>
+                    <input type="text" id="account" placeholder="Account Number" required />
+                    <div class="underline"></div>
+                </div>
+
+                <div class="input-field">
+                    <svg class="prefix-icon" viewBox="0 0 24 24">
+                        <path fill="#667eea"
+                            d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.1 14.8,9.5V11C15.4,11 16,11.6 16,12.3V15.8C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.2C8,11.6 8.6,11 9.2,11V9.5C9.2,8.1 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,9.5V11H13.5V9.5C13.5,8.7 12.8,8.2 12,8.2Z" />
+                    </svg>
+                    <input type="number" id="amount" placeholder="0.00" min="5" step="0.01" required />
+                    <span class="suffix">$</span>
+                    <div class="underline"></div>
+                </div>
+            </div>
+
+            <button type="submit" class="action-btn">
+                <span>Confirm Transfer</span>
+                <svg class="arrow-icon" viewBox="0 0 24 24">
+                    <path fill="#fff" d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" />
+                </svg>
+            </button>
+        </form>
+    </div>
+
+
+    <script type="module" src="Deposit.js"></script>
+</body>
+
+</html>
