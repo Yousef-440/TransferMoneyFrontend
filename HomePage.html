@@ -4,55 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Navbar Design</title>
+    <title>Modern Banking Dashboard</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="HomeStyle.css">
 </head>
 
 <body>
-    <nav class="glass-nav">
-        <div class="nav-container">
-            <div class="logo-wrapper">
-                <img src="./images/logo.png" alt="Logo" class="logo" />
-                <div class="logo-glow"></div>
-            </div>
-            <div class="welcome-container">
-                <h1 class="welcome-message">Welcome Back, <span class="username" id="name">Yousef</span></h1>
-                <div class="welcome-underline"></div>
-            </div>
-        </div>
-    </nav>
+    <div class="background-animation">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
 
-    <div class="dashboard-container">
-        <div class="balance-card">
-            <div>
-                <p class="balance__date">
-                    <span id="hrs">00</span>
-                    <span>:</span>
-                    <span id="min">00</span>
-                    <span id="sec">00</span>
-                </p>
-            </div>
-
-            <div class="balance-boxes">
-                <div class="balance-box">
-                    <span class="box-label">Current Balance</span>
-                    <span class="box-value"><span id="balance">4,850</span><span>€</span></span>
+    <div class="main-container">
+        <nav class="glass-nav animate__animated animate__fadeInDown">
+            <div class="nav-container">
+                <div class="logo-wrapper">
+                    <img src="./images/logo.png" alt="Logo" class="logo" />
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="welcome-container">
+                    <h1 class="welcome-message">Welcome Back, <span class="username" id="name">-</span></h1>
+                    <div class="welcome-underline"></div>
                 </div>
             </div>
-        </div>
-
-        <div class="actions-container">
-            <div class="actions-box">
-                <button class="action-btn deposit-btn" onclick="window.location.href='Deposit.html'">Deposit</button>
-
-                <button class="action-btn withdraw-btn">Withdraw</button>
-                <button class="action-btn transfer-btn">Transfer Money</button>
+        </nav>
+        <div class="dashboard-main">
+            <div class="left-panel">
+                <div class="operations-box animate__animated animate__fadeInLeft">
+                    <div class="operations-header">
+                        <h2>Recent Transactions</h2>
+                        <button class="view-all">View All</button>
+                    </div>
+                    <ul class="transactions-list">
+                    </ul>
+                </div>
             </div>
-        </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
-        <script src="HomeJs.js"></script>
+            <div class="right-panel">
+                <div class="balance-card animate__animated animate__fadeInRight">
+                    <p class="balance__date">
+                        <span id="hrs">00</span>:<span id="min">00</span>:<span id="sec">00</span>
+                    </p>
+                    <div class="balance-boxes">
+                        <div class="balance-box">
+                            <span class="box-label">Current Balance</span>
+                            <span class="box-value"><span id="balance">4,850</span>€</span>
+                        </div>
+                        <div class="balance-box">
+                            <span class="box-label">Monthly Spending</span>
+                            <span class="box-value"><span id="spending">1,200</span>€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="balance-actions">
+                    <button
+                        class="action-btn deposit-btn animate__animated animate__fadeInUp animate__delay-0-5s">Deposit</button>
+                    <button
+                        class="action-btn withdraw-btn animate__animated animate__fadeInUp animate__delay-1s">Withdraw</button>
+                    <button
+                        class="action-btn transfer-btn animate__animated animate__fadeInUp animate__delay-1-5s">Transfer</button>
+                    <button
+                        class="action-btn more-btn animate__animated animate__fadeInUp animate__delay-2s">More</button>
+                </div>
+
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+            <script src="HomeJs.js"></script>
 </body>
 
 </html>

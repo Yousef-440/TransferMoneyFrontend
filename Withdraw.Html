@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Withdraw.css">
+</head>
+
+<body>
+    <div class="withdraw-container">
+        <div class="elegant-card">
+            <div class="card-header">
+                <div class="card-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M20 18v-12c0-1.103-.897-2-2-2h-12c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2zm-10-2v-8l5 4-5 4zm9-12h-12c-1.654 0-3 1.346-3 3v12c0 1.654 1.346 3 3 3h12c1.654 0 3-1.346 3-3v-12c0-1.654-1.346-3-3-3z" />
+                    </svg>
+                </div>
+                <h1 class="card-title">Withdraw</h1>
+            </div>
+
+            <form id="withdrawForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <svg class="prefix-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="#c0392b"
+                                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 15h-2v-6h2v6zm0-8h-2v-2h2v2z" />
+                        </svg>
+                        <input type="text" id="accountNumber" name="accountNumber" placeholder="Account Number"
+                            required>
+                        <span class="underline"></span>
+                    </div>
+
+                    <div class="input-field">
+                        <svg class="prefix-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="#c0392b"
+                                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 15h-2v-6h2v6zm0-8h-2v-2h2v2z" />
+                        </svg>
+                        <input type="number" id="moneyWithdraw" name="moneyWithdraw" placeholder="Amount to Withdraw"
+                            required>
+                        <span class="suffix">$</span>
+                        <span class="underline"></span>
+                    </div>
+
+                    <div class="input-field">
+                        <svg class="prefix-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="#c0392b"
+                                d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 15h-2v-6h2v6zm0-8h-2v-2h2v2z" />
+                        </svg>
+                        <input type="text" id="message" name="message" placeholder="Optional Message" />
+                        <span class="underline"></span>
+                    </div>
+                </div>
+
+                <button type="submit" class="action-btn">
+                    Process Withdrawal
+                    <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white">
+                        <path
+                            d="M16.172 11l-5.364-5.364 1.414-1.414 7.778 7.778-7.778 7.778-1.414-1.414 5.364-5.364h-16.172v-2h16.172z" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./withdraw.js"></script>
+</body>
+
+</html>
