@@ -42,7 +42,14 @@ signupForm.addEventListener("submit", (event) => {
                 confirmButtonText: 'OK',
                 timer: 3500,
                 timerProgressBar: true,
+            }).then(result => {
+                if (result.isConfirmed) {
+                    location.replace("login.html")
+                }
             });
+            setTimeout(() => {
+                location.replace("login.html")
+            }, 3500)
         })
         .catch(error => {
             console.log(error);
